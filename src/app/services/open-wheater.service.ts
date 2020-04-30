@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import  *  as  api  from  '../../assets/data/api.json';
 
 @Injectable({
@@ -19,13 +19,10 @@ export class OpenWheaterService {
   }
 
   getDataWheater(city: string, code: string){ 
-    
-    const headers = new HttpHeaders().set("origin",  "*");
-    return this.httpClient.get(`${api.proxy}${this.urlCurrentWheater}${city},${code}`,{ headers })
+    return this.httpClient.get(`${this.urlCurrentWheater}${city},${code}`)
   }
 
   getDataOneCall(lat: string, lon: string){
-    const headers = new HttpHeaders().set("origin", "*");
-    return this.httpClient.get(`${api.proxy}${this.urlDataOneCall}${api.baseLat}${lat}${api.baseLon}${lon}`,{ headers })
+    return this.httpClient.get(`${this.urlDataOneCall}${api.baseLat}${lat}${api.baseLon}${lon}`)
   }
 }

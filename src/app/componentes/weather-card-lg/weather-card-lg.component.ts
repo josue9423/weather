@@ -22,7 +22,7 @@ export class WeatherCardLgComponent implements OnInit {
   constructor() {  }
 
   ngOnInit(): void {
-    this.urlIcon = `http://openweathermap.org/img/wn/${this.weatherCardModel.icon}@2x.png`
+    this.urlIcon = `https://openweathermap.org/img/wn/${this.weatherCardModel.icon}@2x.png`
   }
 
 }

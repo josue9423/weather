@@ -21,7 +21,7 @@ export class WeatherCardSmComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.urlIcon = `http://openweathermap.org/img/wn/${this.weatherCardModel.icon}@2x.png`
+    this.urlIcon = `https://openweathermap.org/img/wn/${this.weatherCardModel.icon}@2x.png`
   }
 
   public timeConverter(UNIX_timestamp : any){
