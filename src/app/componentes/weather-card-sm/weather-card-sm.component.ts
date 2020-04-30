@@ -24,7 +24,7 @@ export class WeatherCardSmComponent implements OnInit {
     this.urlIcon = `http://openweathermap.org/img/wn/${this.weatherCardModel.icon}@2x.png`
   }
 
-  public timeConverter(UNIX_timestamp : number){
+  public timeConverter(UNIX_timestamp : any){
     var a = new Date(UNIX_timestamp * 1000);
     var months = ['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'];
     var year = a.getFullYear();

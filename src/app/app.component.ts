@@ -51,12 +51,12 @@ export class AppComponent {
           day: this.now.getDay().toString(),
           date: this.now.getDate().toString(),
           month : this.now.getMonth().toString(),
-          temperature: this.convertToCelsius(res.main.temp),
-          temperatureMax : this.convertToCelsius(res.main.temp_max),
-          temperatureMin : this.convertToCelsius(res.main.temp_min),
-          icon: res.weather[0].icon,
-          wind: res.wind.speed,
-          clouds: res.clouds.all
+          temperature: this.convertToCelsius((res as any).main.temp),
+          temperatureMax : this.convertToCelsius((res as any).main.temp_max),
+          temperatureMin : this.convertToCelsius((res as any).main.temp_min),
+          icon: (res as any).weather[0].icon,
+          wind: (res as any).wind.speed,
+          clouds: (res as any).clouds.all
         }
         this.isLoading = false
         this.isShowCard = true
@@ -89,7 +89,7 @@ export class AppComponent {
         res => {
           this.isLoadingModal = false
           this.isShowCardSm = true
-          for(let dataDaily of res.daily.splice(0,4)){
+          for(let dataDaily of (res as any).daily.splice(0,4)){
             var weather : WeatherCardModel
             weather = {
               city: this.citySelectedString,
@@ -100,8 +100,8 @@ export class AppComponent {
               temperatureMax : this.convertToCelsius(dataDaily.temp.max),
               temperatureMin : this.convertToCelsius(dataDaily.temp.min),
               icon: dataDaily.weather[0].icon,
-              wind: res.wind_speed,
-              clouds: res.clouds
+              wind: dataDaily.wind_speed,
+              clouds: dataDaily.clouds
             }
             this.dataOneCall.push(weather)
           }
