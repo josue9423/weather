@@ -19,7 +19,7 @@ import { WeatherCardSmComponent } from './componentes/weather-card-sm/weather-ca
     WeatherCardSmComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     HttpClientModule
   ],
   providers: [],
