@@ -11,9 +11,7 @@
         "dev:ssr": "ng run bsale-weather:serve-ssr",
         "serve:ssr": "node dist/bsale-weather/server/main.js",
         "build:ssr": "ng build --prod && ng run bsale-weather:server:production",
-        "prerender": "ng run bsale-weather:prerender",
-        "start:heroku": "node dist/server",
-        "postinstall": "npm run build:ssr"
+        "prerender": "ng run bsale-weather:prerender"
     },
     "private": true,
     "dependencies": {
