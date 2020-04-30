@@ -1,0 +1,18 @@
+<div class="calendar">
+    <div class="month">
+        <ul>
+            <li (click)="decreaseMonth()" class="prev">&#10094;</li>
+            <li (click)="increaseMonth()" class="next">&#10095;</li>
+            <li>
+                {{ monthSelected }}<br>
+                <span style="font-size:18px">{{ yearSelected }}</span>
+            </li>
+        </ul>
+    </div>
+    <ul class="weekdays" [ngClass]="darkMode ? 'dark-mode' : ''">
+        <li *ngFor="let day of days">{{ day }}</li>
+    </ul>
+    <ul class="days" [ngClass]="darkMode ? 'dark-mode' : ''">
+        <a href="#open-modal" (click)="onClickDay(date)" *ngFor="let date of dates">{{ date }}</a>
+    </ul>
+</div>

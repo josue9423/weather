@@ -1,0 +1,39 @@
+.title {
+    width: 100%;
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 72px;
+    font-weight: 500;
+    color: #fff;
+    font-family: monospace;
+}
+
+.sub-title {
+    margin: 0 auto 0 auto;
+    width: 50%;
+    text-align: center;
+    padding: 0.5rem 0;
+    font-family: monospace;
+}
+
+.sub-title h6 {
+    font-size: 14px;
+    color: #eee;
+}
+
+@media screen and (max-width: 767px) {
+    .sub-title {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .title h1 {
+        font-size: 62px;
+    }
+    .sub-title h6 {
+        font-size: 12px;
+    }
+}

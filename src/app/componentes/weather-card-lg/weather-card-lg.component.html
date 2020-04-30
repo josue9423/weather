@@ -1,0 +1,25 @@
+<div class="card" [ngClass]="darkMode ? 'dark-mode' : ''">
+    <div class="card-body">
+        <div class="card-title d-sm-flex d-block">
+            <h5 class="mr-auto mb-0">{{ days[weatherCardModel.day ]}}</h5>
+            <h5 class="ml-auto mb-0">{{ weatherCardModel.date + ' ' + months[weatherCardModel.month] }}</h5>
+        </div>
+        <h6 class="card-subtitle text-muted">{{weatherCardModel.city}}</h6>
+        <div class="d-sm-flex d-block justify-content-center align-items-center">
+            <h1 class="my-2 main-value mr-auto">{{ weatherCardModel.temperature }}°C</h1>
+            <img src={{urlIcon}} alt="Smiley face" class="mx-auto text-center d-flex" height="90" width="90">
+        </div>
+        <div class="d-sm-flex d-block">
+            <div class="d-flex align-items-center mr-4">
+                <i class="fas fa-cloud"></i>
+                <h6 class="m-0 ml-1">{{ weatherCardModel.clouds }} %</h6>
+            </div>
+
+            <div class="d-flex align-items-center mr-4">
+                <i class="fas fa-wind"></i>
+                <h6 class="m-0 ml-1">{{ weatherCardModel.wind }} m/s</h6>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,31 @@
+.card {
+    transition: 300ms;
+    font-family: monospace;
+    border: none;
+    background: #fafafa;
+    min-height: 200px;
+    border-radius: 0;
+}
+
+.card.dark-mode {
+    transition: 300ms;
+    background: #181818;
+    color: white;
+}
+
+.main-value {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.second-value {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 767px) {
+    .main-value {
+        font-size: 28px;
+        font-weight: bold;
+        text-align: center;
+    }
+}

@@ -1,0 +1,14 @@
+<div class="card" [ngClass]="darkMode ? 'dark-mode' : ''">
+    <div class="card-body">
+        <div class="card-title text-center">
+            <h5 class="mr-auto mb-0">{{ timeConverter(weatherCardModel.date) }}</h5>
+        </div>
+        <div class="d-block justify-content-center align-items-center text-center">
+            <img src={{urlIcon}} alt="Smiley face" height="50" width="50">
+            <h1 class="my-2 main-value">{{ weatherCardModel.temperatureMax }}°C</h1>
+        </div>
+        <div class="d-block text-center">
+            <h6 class="my-2 second-value">{{ weatherCardModel.temperatureMin }}°C</h6>
+        </div>
+    </div>
+</div>
