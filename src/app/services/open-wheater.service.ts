@@ -18,15 +18,13 @@ export class OpenWheaterService {
     this.urlDataOneCall = `${api.baseURL}${api.getDataOneCall}${api.baseKey}${api.apiKey}`
   }
 
-  getDataWheater(city: string, code: string){ 
-    
-    const headers = new HttpHeaders().set("origin",  "*");
-    console.log(`${api.proxy}${this.urlCurrentWheater}${city},${code}`, headers)
-    return this.httpClient.get(`${api.proxy}${this.urlCurrentWheater}${city},${code}`,{ headers })
+  getDataWheater(city: string, code: string){     
+    //const headers = new HttpHeaders().set("origin",  "*");
+    return this.httpClient.get(`${this.urlCurrentWheater}${city},${code}`)
   }
 
   getDataOneCall(lat: string, lon: string){
-    const headers = new HttpHeaders().set("origin", "*");
-    return this.httpClient.get(`${api.proxy}${this.urlDataOneCall}${api.baseLat}${lat}${api.baseLon}${lon}`,{ headers })
+    //const headers = new HttpHeaders().set("origin", "*");
+    return this.httpClient.get(`${this.urlDataOneCall}${api.baseLat}${lat}${api.baseLon}${lon}`)
   }
 }
