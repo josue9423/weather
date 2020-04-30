@@ -14,18 +14,18 @@ export class OpenWheaterService {
   urlDataOneCall: string= '';
 
   constructor(private httpClient: HttpClient) { 
-    //this.urlCurrentWheater = `${api.baseURL}${api.getCurrentDataWheare}${api.baseKey}${api.apiKey}${api.baseData}`
-    //this.urlDataOneCall = `${api.baseURL}${api.getDataOneCall}${api.baseKey}${api.apiKey}`
+    this.urlCurrentWheater = `${api.baseURL}${api.getCurrentDataWheare}${api.baseKey}${api.apiKey}${api.baseData}`
+    this.urlDataOneCall = `${api.baseURL}${api.getDataOneCall}${api.baseKey}${api.apiKey}`
   }
 
-  getDataWheater(city: string, code: string){     
+  getDataWheater(city: string, code: string){ 
+    
     const headers = new HttpHeaders().set("origin",  "*");
-    return this.httpClient.get("https://api.openweathermap.org/data/2.5/weather?&appid=b9a416830e379646ab608c490ad476f2&q=Brasilia,BR",{ headers })
+    return this.httpClient.get(`${api.proxy}${this.urlCurrentWheater}${city},${code}`,{ headers })
   }
 
   getDataOneCall(lat: string, lon: string){
     const headers = new HttpHeaders().set("origin", "*");
-    return this.httpClient.get("https://api.openweathermap.org/data/2.5/onecall?lat=60.99&lon=30.9&appid=b9a416830e379646ab608c490ad476f2",{ headers })
+    return this.httpClient.get(`${api.proxy}${this.urlDataOneCall}${api.baseLat}${lat}${api.baseLon}${lon}`,{ headers })
   }
 }
-  
