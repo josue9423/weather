@@ -19,12 +19,12 @@ export class OpenWheaterService {
   }
 
   getDataWheater(city: string, code: string){     
-    //const headers = new HttpHeaders().set("origin",  "*");
-    return this.httpClient.get(`${this.urlCurrentWheater}${city},${code}`)
+    const headers = new HttpHeaders().set("origin",  "*");
+    return this.httpClient.get(`${api.proxy}${this.urlCurrentWheater}${city},${code}`,{ headers })
   }
 
   getDataOneCall(lat: string, lon: string){
-    //const headers = new HttpHeaders().set("origin", "*");
-    return this.httpClient.get(`${this.urlDataOneCall}${api.baseLat}${lat}${api.baseLon}${lon}`)
+    const headers = new HttpHeaders().set("origin", "*");
+    return this.httpClient.get(`${api.proxy}${this.urlDataOneCall}${api.baseLat}${lat}${api.baseLon}${lon}`,{ headers })
   }
 }
