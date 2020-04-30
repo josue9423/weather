@@ -1,5 +1,6 @@
 {
     "apiKey": "b9a416830e379646ab608c490ad476f2",
+    "proxy": "https://cors-anywhere.herokuapp.com/",
     "baseURL": "https://api.openweathermap.org",
     "baseKey": "&appid=",
     "baseData": "&q=",
