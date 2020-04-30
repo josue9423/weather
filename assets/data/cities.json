@@ -1,0 +1,327 @@
+[{
+        "id": {
+            "$numberLong": "3936456"
+        },
+        "city": {
+            "id": {
+                "$numberLong": "3936456"
+            },
+            "name": "Lima",
+            "findname": "LIMA",
+            "country": "PE",
+            "coord": {
+                "lon": -77.028236,
+                "lat": -12.04318
+            },
+            "zoom": {
+                "$numberLong": "1"
+            }
+        }
+    }, {
+        "id": {
+            "$numberLong": "3691175"
+        },
+        "city": {
+            "id": {
+                "$numberLong": "3691175"
+            },
+            "name": "Trujillo",
+            "findname": "TRUJILLO",
+            "country": "PE",
+            "coord": {
+                "lon": -79.029984,
+                "lat": -8.11599
+            },
+            "zoom": {
+                "$numberLong": "6"
+            }
+        }
+    }, {
+        "id": 3688689,
+        "city": {
+            "id": {
+                "$numberLong": "3688689"
+            },
+            "name": "Bogota",
+            "findname": "BOGOTA",
+            "country": "CO",
+            "coord": {
+                "lon": -74.081749,
+                "lat": 4.60971
+            },
+            "zoom": {
+                "$numberLong": "1"
+            }
+        }
+    }, {
+        "id": 3911925,
+        "city": {
+            "id": {
+                "$numberLong": "3911925"
+            },
+            "name": "La Paz",
+            "findname": "LA PAZ",
+            "country": "BO",
+            "coord": {
+                "lon": -68.150002,
+                "lat": -16.5
+            },
+            "zoom": {
+                "$numberLong": "6"
+            }
+        }
+    }, {
+        "id": 3435910,
+        "city": {
+            "id": {
+                "$numberLong": "3435910"
+            },
+            "name": "Buenos Aires",
+            "findname": "BUENOS AIRES",
+            "country": "AR",
+            "coord": {
+                "lon": -58.377232,
+                "lat": -34.613152
+            },
+            "zoom": {
+                "$numberLong": "1"
+            }
+        }
+    }, {
+        "id": 3469058,
+        "city": {
+            "id": {
+                "$numberLong": "3469058"
+            },
+            "name": "Brasilia",
+            "findname": "BRASILIA",
+            "country": "BR",
+            "coord": {
+                "lon": -47.929722,
+                "lat": -15.77972
+            },
+            "zoom": {
+                "$numberLong": "5"
+            }
+        }
+    }, {
+        "id": {
+            "$numberLong": "7874740"
+        },
+        "city": {
+            "id": {
+                "$numberLong": "7874740"
+            },
+            "name": "Santiago de Chile",
+            "findname": "VILLA PRESIDENTE FREI, NUNOA, SANTIAGO, CHILE",
+            "country": "CL",
+            "coord": {
+                "lon": -70.580238,
+                "lat": -33.46069
+            },
+            "zoom": {
+                "$numberLong": "16"
+            }
+        }
+    }, {
+        "id": {
+            "$numberLong": "3652462"
+        },
+        "city": {
+            "id": {
+                "$numberLong": "3652462"
+            },
+            "name": "Quito",
+            "findname": "QUITO",
+            "country": "EC",
+            "coord": {
+                "lon": -78.524948,
+                "lat": -0.22985
+            },
+            "zoom": {
+                "$numberLong": "6"
+            }
+        }
+    }, {
+        "id": {
+            "$numberLong": "4398103"
+        },
+        "city": {
+            "id": {
+                "$numberLong": "4398103"
+            },
+            "name": "Mexico",
+            "findname": "MEXICO",
+            "country": "US",
+            "coord": {
+                "lon": -91.88295,
+                "lat": 39.169762
+            },
+            "zoom": {
+                "$numberLong": "16"
+            }
+        }
+    }, {
+        "id": 3439389,
+        "city": {
+            "id": {
+                "$numberLong": "3439389"
+            },
+            "name": "Asuncion",
+            "findname": "ASUNCION",
+            "country": "PY",
+            "coord": {
+                "lon": -57.63591,
+                "lat": -25.300659
+            },
+            "zoom": {
+                "$numberLong": "5"
+            }
+        }
+    }, {
+        "id": 3441575,
+        "city": {
+            "id": {
+                "$numberLong": "3441575"
+            },
+            "name": "Montevideo",
+            "findname": "MONTEVIDEO",
+            "country": "UY",
+            "coord": {
+                "lon": -56.167351,
+                "lat": -34.833462
+            },
+            "zoom": {
+                "$numberLong": "7"
+            }
+        }
+    }, {
+        "id": 3646738,
+        "city": {
+            "id": {
+                "$numberLong": "3646738"
+            },
+            "name": "Caracas",
+            "findname": "CARACAS",
+            "country": "VE",
+            "coord": {
+                "lon": -66.879189,
+                "lat": 10.48801
+            },
+            "zoom": {
+                "$numberLong": "1"
+            }
+        }
+    },
+    {
+        "id": 2761369,
+        "city": {
+            "id": {
+                "$numberLong": "2761369"
+            },
+            "name": "Vienna",
+            "findname": "VIENNA",
+            "country": "AT",
+            "coord": {
+                "lon": 16.37208,
+                "lat": 48.208488
+            },
+            "zoom": {
+                "$numberLong": "5"
+            }
+        }
+    }, {
+        "id": {
+            "$numberLong": "5172078"
+        },
+        "city": {
+            "id": {
+                "$numberLong": "5172078"
+            },
+            "name": "Sidney",
+            "findname": "SIDNEY",
+            "country": "US",
+            "coord": {
+                "lon": -84.155502,
+                "lat": 40.284222
+            },
+            "zoom": {
+                "$numberLong": "10"
+            }
+        }
+    }, {
+        "id": 3117735,
+        "city": {
+            "id": {
+                "$numberLong": "3117735"
+            },
+            "name": "Madrid",
+            "findname": "MADRID",
+            "country": "ES",
+            "coord": {
+                "lon": -3.70256,
+                "lat": 40.4165
+            },
+            "zoom": {
+                "$numberLong": "1"
+            }
+        }
+    }, {
+        "id": {
+            "$numberLong": "5106292"
+        },
+        "city": {
+            "id": {
+                "$numberLong": "5106292"
+            },
+            "name": "West New York",
+            "findname": "WEST NEW YORK",
+            "country": "US",
+            "coord": {
+                "lon": -74.014313,
+                "lat": 40.78788
+            },
+            "zoom": {
+                "$numberLong": "14"
+            }
+        }
+    },
+    {
+        "id": {
+            "$numberLong": "2988507"
+        },
+        "city": {
+            "id": {
+                "$numberLong": "2988507"
+            },
+            "name": "Paris",
+            "findname": "PARIS",
+            "country": "FR",
+            "coord": {
+                "lon": 2.3488,
+                "lat": 48.853409
+            },
+            "zoom": {
+                "$numberLong": "1"
+            }
+        }
+    },
+    {
+        "id": 3169070,
+        "city": {
+            "id": {
+                "$numberLong": "3169070"
+            },
+            "name": "Roma",
+            "findname": "ROMA",
+            "country": "IT",
+            "coord": {
+                "lon": 12.4839,
+                "lat": 41.894741
+            },
+            "zoom": {
+                "$numberLong": "5"
+            }
+        }
+    }
+]
